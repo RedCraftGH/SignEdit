@@ -12,7 +12,7 @@ use pocketmine\item\Item;
 
 class SignEdit extends PluginBase implements Listener {
 
-  public prefix = TextFormat::YELLOW . "Cube" . TextFormat::BLUE . "X " . TextFormat::GOLD . "> ";
+  public $prefix = TextFormat::YELLOW . "Cube" . TextFormat::BLUE . "X " . TextFormat::GOLD . "> ";
   
   public function onLoad() : void {
   
