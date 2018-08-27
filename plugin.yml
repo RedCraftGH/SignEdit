@@ -1,0 +1,5 @@
+name: SignEdit
+version: 1.0.0
+author: RedCraftPE
+api: 3.0.0
+main: RedCraftPE\SignEdit
