@@ -9,6 +9,7 @@ use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\item\Item;
+use pocketmine\math\Vector3;
 
 class SignEdit extends PluginBase implements Listener {
 
