@@ -37,6 +37,7 @@ class SignEdit extends PluginBase implements Listener {
   
     $player = $event->getPlayer();
     $block = $event->getBlock();
+    $blockID= $event->getBlock()->getID();
     
     if($blockID==63 or $blockID==68 or $blockID==323){
       $tile = $event->getBlock()->getLevel()->getTile(new Vector3($event->getBlock()->getX(),$event->getBlock()->getY(),$event->getBlock()->getZ()));
