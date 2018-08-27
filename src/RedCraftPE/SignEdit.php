@@ -38,13 +38,12 @@ class SignEdit extends PluginBase implements Listener {
     $player = $event->getPlayer();
     $block = $event->getBlock();
     
-    if ($block->getID() == 323) {
-    
-      $player->sendMessage("You have just touched a sign!");
-      return true;
-    
+    if($blockID==63 or $blockID==68 or $blockID==323){
+      $tile = $event->getBlock()->getLevel()->getTile(new Vector3($event->getBlock()->getX(),$event->getBlock()->getY(),$event->getBlock()->getZ()));
+      if($tile instanceof Sign){
+        $text = $tile->getText();
+        $event->getPlayer()->sendMessage("The first line of the sign is ".$text[0]);
+      }
     }
-  
   }
-
 }
